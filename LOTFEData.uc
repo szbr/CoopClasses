@@ -1,0 +1,130 @@
+//=============================================================================
+// LOTFEData.
+//=============================================================================
+class LOTFEData expands Info;
+
+
+var Sound LOTFEStartSounds[16];
+var Sound LOTFEMusic[50];
+var string LOTFEMaps[50];
+
+
+defaultproperties
+{
+    LOTFEStartSounds(0)=Sound'MusicalSnd.ME.mediscover04'
+    LOTFEStartSounds(1)=Sound'MusicalSnd.ME.mediscover07'
+    LOTFEStartSounds(2)=Sound'MusicalSnd.ME.meleadinto01'
+    LOTFEStartSounds(3)=Sound'MusicalSnd.ME.metranquility09'
+    LOTFEStartSounds(4)=Sound'MusicalSnd.ME.metransition01'
+    LOTFEStartSounds(5)=Sound'MusicalSnd.ME.metense01'
+    LOTFEStartSounds(6)=Sound'MusicalSnd.ME.mestrings09'
+    LOTFEStartSounds(7)=Sound'MusicalSnd.ME.medeepstrings04'
+    LOTFEStartSounds(8)=Sound'MusicalSnd.ME.medeepstrings06'
+    LOTFEStartSounds(9)=Sound'MusicalSnd.ME.mehorns01'
+    LOTFEStartSounds(10)=Sound'MusicalSnd.ME.memystery01'
+    LOTFEStartSounds(11)=Sound'MusicalSnd.ME.mesorrow02'
+    LOTFEStartSounds(12)=Sound'MusicalSnd.ME.mesuspense11'
+    LOTFEStartSounds(13)=Sound'MusicalSnd.ME.mediscover03'
+    LOTFEStartSounds(14)=Sound'MusicalSnd.Ae.aescary02S'
+    LOTFEStartSounds(15)=Sound'MusicalSnd.Ae.aedark08M'
+    LOTFEMusic(0)=Sound'VoyCoopSounds.VoyCoop.harom'
+    LOTFEMusic(1)=Sound'VoyCoopSounds.VoyCoop.egy'
+    LOTFEMusic(2)=Sound'VoyCoopSounds.VoyCoop.ketto'
+    LOTFEMusic(3)=Sound'VoyCoopSounds.VoyCoop.het'
+    LOTFEMusic(4)=Sound'VoyCoopSounds.VoyCoop.ot'
+    LOTFEMusic(5)=Sound'VoyCoopSounds.VoyCoop.tizennyolc'
+    LOTFEMusic(6)=Sound'VoyCoopSounds.VoyCoop.tiz'
+    LOTFEMusic(7)=Sound'VoyCoopSounds.VoyCoop.hat'
+    LOTFEMusic(8)=Sound'VoyCoopSounds.VoyCoop.kilenc'
+    LOTFEMusic(9)=Sound'VoyCoopSounds.VoyCoop.tizenharom'
+    LOTFEMusic(10)=Sound'VoyCoopSounds.VoyCoop.tizenketto'
+    LOTFEMusic(11)=Sound'VoyCoopSounds.VoyCoop.tizenhat'
+    LOTFEMusic(12)=Sound'VoyCoopSounds.VoyCoop.negy'
+    LOTFEMusic(13)=Sound'VoyCoopSounds.VoyCoop.huszonhat'
+    LOTFEMusic(14)=Sound'VoyCoopSounds.VoyCoop.negy'
+    LOTFEMusic(15)=Sound'VoyCoopSounds.VoyCoop.huszonhat'
+    LOTFEMusic(16)=Sound'VoyCoopSounds.VoyCoop.huszonhet'
+    LOTFEMusic(17)=Sound'VoyCoopSounds.VoyCoop.negy'
+    LOTFEMusic(18)=Sound'VoyCoopSounds.VoyCoop.huszonketto'
+    LOTFEMusic(19)=Sound'VoyCoopSounds.VoyCoop.tizenegy'
+    LOTFEMusic(20)=Sound'VoyCoopSounds.VoyCoop.husz'
+    LOTFEMusic(21)=Sound'VoyCoopSounds.VoyCoop.huszonegy'
+    LOTFEMusic(22)=Sound'VoyCoopSounds.VoyCoop.huszonharom'
+    LOTFEMusic(23)=Sound'VoyCoopSounds.VoyCoop.harom'
+    LOTFEMusic(24)=Sound'VoyCoopSounds.VoyCoop.huszonnegy'
+    LOTFEMusic(25)=Sound'VoyCoopSounds.VoyCoop.huszonnegy'
+    LOTFEMusic(26)=Sound'VoyCoopSounds.VoyCoop.huszonnegy'
+    LOTFEMusic(27)=Sound'VoyCoopSounds.VoyCoop.huszonnegy'
+    LOTFEMusic(28)=Sound'VoyCoopSounds.VoyCoop.tizenketto'
+    LOTFEMusic(29)=Sound'VoyCoopSounds.VoyCoop.harom'
+    LOTFEMusic(30)=Sound'VoyCoopSounds.VoyCoop.huszonnyolc'
+    LOTFEMusic(31)=Sound'VoyCoopSounds.VoyCoop.het'
+    LOTFEMusic(32)=Sound'VoyCoopSounds.VoyCoop.tizennegy'
+    LOTFEMusic(33)=Sound'VoyCoopSounds.VoyCoop.tizenkilenc'
+    LOTFEMusic(34)=Sound'VoyCoopSounds.VoyCoop.tizenhet'
+    LOTFEMusic(35)=Sound'VoyCoopSounds.VoyCoop.tizenketto'
+    LOTFEMusic(36)=Sound'VoyCoopSounds.VoyCoop.nyolc'
+    LOTFEMusic(37)=Sound'VoyCoopSounds.VoyCoop.tizenot'
+    LOTFEMusic(38)=Sound'VoyCoopSounds.VoyCoop.harom'
+    LOTFEMusic(39)=Sound'VoyCoopSounds.VoyCoop.harom'
+    LOTFEMusic(40)=Sound'VoyCoopSounds.VoyCoop.negy'
+    LOTFEMusic(41)=Sound'VoyCoopSounds2.VoyCoop2.harmincketto'
+    LOTFEMusic(42)=Sound'VoyCoopSounds2.VoyCoop2.harmincnegy'
+    LOTFEMusic(43)=Sound'VoyCoopSounds.VoyCoop.harom'
+    LOTFEMusic(44)=Sound'VoyCoopSounds.VoyCoop.harom'
+    LOTFEMusic(45)=Sound'VoyCoopSounds2.VoyCoop2.harmincegy'
+    LOTFEMusic(46)=Sound'VoyCoopSounds.VoyCoop.huszonkilenc'
+    LOTFEMusic(47)=Sound'VoyCoopSounds2.VoyCoop2.harmincot'
+    LOTFEMusic(48)=Sound'VoyCoopSounds2.VoyCoop2.harmincharom'
+    LOTFEMusic(49)=Sound'VoyCoopSounds2.VoyCoop2.harminc' 
+    LOTFEMaps(0)="coop-lotfe01-Beginnings.run"
+    LOTFEMaps(1)="coop-lotfe02-WayforTheTower.run"
+    LOTFEMaps(2)="coop-lotfe03-TheIceTower.run"
+    LOTFEMaps(3)="coop-lotfe04-CrashSite.run"
+    LOTFEMaps(4)="coop-lotfe05-BeetleHome.run"
+    LOTFEMaps(5)="coop-lotfe06-WayToTheIceCavern.run"
+    LOTFEMaps(6)="coop-lotfe07-IceCavern.run"
+    LOTFEMaps(7)="coop-lotfe08-GoblinQuarry.run"
+    LOTFEMaps(8)="coop-lotfe09-WhiteWoods.run"
+    LOTFEMaps(9)="coop-lotfe10-Demon'sThroat.run"
+    LOTFEMaps(10)="coop-lotfe11-Demon'sThroat2.run"
+    LOTFEMaps(11)="coop-lotfe12-CrystalMaze.run"
+    LOTFEMaps(12)="coop-lotfe13-WayToTheVolcano.run"
+    LOTFEMaps(13)="coop-lotfe14-LavaChamber.run"
+    LOTFEMaps(14)="coop-lotfe15-HellGate.run"
+    LOTFEMaps(15)="coop-lotfe16-HellIntro.run"
+    LOTFEMaps(16)="coop-lotfe17-HellCastle.run"
+    LOTFEMaps(17)="coop-lotfe18-Canyon.run"
+    LOTFEMaps(18)="coop-lotfe19-Castle.run"
+    LOTFEMaps(19)="coop-lotfe20-Sewer.run"
+    LOTFEMaps(20)="coop-lotfe21-Town.run"
+    LOTFEMaps(21)="coop-lotfe22-GalleonAtSea.run"
+    LOTFEMaps(22)="coop-lotfe23-IcyShipyard.run"
+    LOTFEMaps(23)="coop-lotfe24-GoldenDungeon.run"
+    LOTFEMaps(24)="coop-lotfe25-Jungle.run"
+    LOTFEMaps(25)="coop-lotfe26-Trapz.run"
+    LOTFEMaps(26)="coop-lotfe27-Trapz2.run"
+    LOTFEMaps(27)="coop-lotfe28-Trapz3.run"
+    LOTFEMaps(28)="coop-lotfe29-GladiatorArena.run"
+    LOTFEMaps(29)="coop-lotfe30-MybytDunes.run"
+    LOTFEMaps(30)="coop-lotfe31-MybytEgypt.run"
+    LOTFEMaps(31)="coop-lotfe32-Atlantis.run"
+    LOTFEMaps(32)="coop-lotfe33-Lake'sSecret.run"
+    LOTFEMaps(33)="coop-lotfe34-SwampCathedral.run"
+    LOTFEMaps(34)="coop-lotfe35-HauntedMansion.run"
+    LOTFEMaps(35)="coop-lotfe36-Necropolis.run"
+    LOTFEMaps(36)="coop-lotfe37-FrozenGraveyard.run"
+    LOTFEMaps(37)="coop-lotfe38-FrozenEmpire.run"
+    LOTFEMaps(38)="coop-lotfe39-Eden.run"
+    LOTFEMaps(39)="coop-lotfe40-VirtualCubes.run"
+    LOTFEMaps(40)="coop-lotfe41-HiddenFactory.run"
+    LOTFEMaps(41)="coop-lotfe42-DeadlyUndergrounds.run"
+    LOTFEMaps(42)="coop-lotfe43-ShatteredIce.run"
+    LOTFEMaps(43)="coop-lotfe44-ValleyofBridges.run"
+    LOTFEMaps(44)="coop-lotfe45-AlleyofTheTavern.run"
+    LOTFEMaps(45)="coop-lotfe46-LumberMill.run"
+    LOTFEMaps(46)="coop-lotfe47-GloriousFortress.run"
+    LOTFEMaps(47)="coop-lotfe48-CurseOfTheGhostShip.run"
+    LOTFEMaps(48)="coop-lotfe49-FinalShowdown.run"
+    LOTFEMaps(49)="coop-lotfe50-Outro.run"
+}
